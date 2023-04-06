@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react'
 import { useParams, Link } from "react-router-dom";
 import styled from 'styled-components';
-require("dotenv").config();
+
 
 export const SearchInput = () => {
 
