@@ -13,7 +13,7 @@ export const Diet = () => {
 
 
   const getDiet = async (name) => {
-    // const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&diet=${name}`);
+    const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&diet=${name}`);
     const recipes = await data.json();
     setDiet(recipes.results);
   };
