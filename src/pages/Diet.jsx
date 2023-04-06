@@ -9,27 +9,14 @@ export const Diet = () => {
   const [diet, setDiet] = useState ([]);
   let params = useParams();
 
+
+
+
   const getDiet = async (name) => {
-
-  const check = localStorage.getItem("diet");
-
-    if(check){
-      setDiet(JSON.parse(check));
-    }else{
-      const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&diet=${name}`);
+    // const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&diet=${name}`);
     const recipes = await data.json();
-
-      localStorage.setItem("diet", JSON.stringify(data.recipes));
-      setDiet(recipes.results)
-      console.log(data);
-    }
-  }
-
-  // const getDiet = async (name) => {
-  //   const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&diet=${name}`);
-  //   const recipes = await data.json();
-  //   setDiet(recipes.results);
-  // };
+    setDiet(recipes.results);
+  };
 
   useEffect(()=> {
     getDiet(params.type)
@@ -54,8 +41,8 @@ export const Diet = () => {
     })}
     </Grid>
   )
-  
-}
+  }
+
 
 const Grid = styled(motion.div)`
   display: grid;

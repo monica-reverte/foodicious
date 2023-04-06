@@ -40,7 +40,7 @@ const FormStyle = styled.form`
         border: none;
         background: #fefaf7;
         font-size: 1rem;
-        color: white;
+        color:rgb(56,56,56);
         padding: 1rem 3rem;
         border: 1px solid rgb(56,56,56);
         border-radius: 0.5rem;

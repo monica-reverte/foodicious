@@ -2,13 +2,14 @@ import { useState, useEffect} from 'react'
 import { useParams, Link } from "react-router-dom";
 import styled from 'styled-components';
 
+
 export const SearchInput = () => {
 
   const [searchRecipe, setSearchRecipes] = useState([]);
   let params = useParams();
 
   const getSearchInput = async (name) => {
-    // const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=25b391182638438e8b24f28b555e9b64&query=${name}`);
+    // const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_API_KEY}&query=${name}`);
     const recipes = await data.json();
     setSearchRecipes(recipes.results);
   };

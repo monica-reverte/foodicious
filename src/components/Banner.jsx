@@ -42,6 +42,20 @@ const BannerContainer = styled.div`
     width: 40%;
   }
 
+  @media only screen and (max-width: 700px) {
+    
+      display: none;
+    }
+
+    @media only screen and (max-width: 1090px) {
+    
+      flex-direction: column;
+
+      img{
+        display: none
+      }
+    }
+
 
 
 `
