@@ -14,7 +14,7 @@ const FooterContainer = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-margin: 2rem;
+margin: 0 2rem;
 padding: 0.8rem;
 }
 
