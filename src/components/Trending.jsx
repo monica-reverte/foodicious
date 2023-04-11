@@ -18,7 +18,6 @@ export const Trending = () => {
   const getTrending = async () => {
       const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_API_KEY}&number=6`);
       const data = await api.json();
-
       setTren(data.recipes)
       
     }
