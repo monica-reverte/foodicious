@@ -28,7 +28,20 @@ export const Trending = () => {
       <Wrapper>
         <h3>TRENDING</h3>
           <Splide options={{
-            perPage: 2,
+            perPage: 3,
+            breakpoints: {
+              1024: {
+                perPage: 3,
+              },
+              767: {
+                perPage: 2,
+            
+              },
+              640: {
+                perPage: 1,
+          
+              },
+            },
             arrows: true,
             pagination: false,
             drag: "free",
