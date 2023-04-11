@@ -16,22 +16,14 @@ export const Trending = () => {
   }, []);
 
   const getTrending = async () => {
-
-    const check = localStorage.getItem("trending");
-
-    if(check){
-      setTren(JSON.parse(check));
-    }else{
-      const api = await  (`https://api.spoonacular.com/recipes/random?apiKey=25b391182638438e8b24f28b555e9b64&number=6`);
+      const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${import.meta.env.VITE_API_KEY}&number=6`);
       const data = await api.json();
 
-      localStorage.setItem("trending", JSON.stringify(data.recipes));
       setTren(data.recipes)
-      console.log(data);
+      
     }
     
     
-  }
   return (
     <div>
       <Wrapper>
