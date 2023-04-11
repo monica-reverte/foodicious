@@ -19,6 +19,16 @@ You may also see any lint errors in the console.
 
 This project is for a JOBarcelona Hackaton. This challenge consists to create a website that shows different dishes and their details through the Spoonaculat API, which is an API that provides all kinds of food information: recipes, ingredients, nutrients, etc.
 
+# Project Organization 
+
+In src there are some main folders as:
+
+- assets: important images.
+- components: individual part of some page.
+- pages: main pages
+- routes: document with routes of router-dom
+- App: structure of the page
+
 ## Objectives
 
 -Have a card layout that contains Recipe images (even if it is not directly connected to the API). They can be popular recipes, random, organized in categories, etc.
