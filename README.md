@@ -40,10 +40,20 @@ This project is for a JOBarcelona Hackaton. This challenge consists to create a 
 
 <img src="./src/assets/layout.png" alt="layout">
 
+
 # Recipe
 
 <img src="./src/assets/instructions.png" alt="instructions">
 <img src="./src/assets/ingredients.png" alt="ingredients">
+
+# CodeFactor
+
+<img src="./src/assets/codefactor.png" alt="codefactor">
+
+
+## Link
+
+
 
 
 
